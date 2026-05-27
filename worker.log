@@ -1,0 +1,1496 @@
+2026-05-12 15:45:47,560 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 15:45:47,561 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 15:48:36,471 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 15:48:36,471 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 15:53:49,957 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 15:53:49,958 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 15:53:50,142 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 15:53:53,362 [worker.ui] ERROR: Traceback (most recent call last):
+  File "C:\Users\Dima\Desktop\jarvis\ui\app.py", line 689, in _init
+    self._dispatcher   = CommandDispatcher(on_response=self._cb_response)
+                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dima\Desktop\jarvis\core\command_dispatcher.py", line 40, in __init__
+    self.register_all()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Dima\Desktop\jarvis\core\command_dispatcher.py", line 48, in register_all
+    from commands.claude_ai  import ClaudeCommand
+ModuleNotFoundError: No module named 'commands.claude_ai'
+
+2026-05-12 15:54:06,446 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 15:54:06,447 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 15:54:06,616 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 15:54:09,805 [worker.ui] ERROR: Traceback (most recent call last):
+  File "C:\Users\Dima\Desktop\jarvis\ui\app.py", line 689, in _init
+    self._dispatcher   = CommandDispatcher(on_response=self._cb_response)
+                         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dima\Desktop\jarvis\core\command_dispatcher.py", line 40, in __init__
+    self.register_all()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Dima\Desktop\jarvis\core\command_dispatcher.py", line 48, in register_all
+    from commands.claude_ai  import ClaudeCommand
+ModuleNotFoundError: No module named 'commands.claude_ai'
+
+2026-05-12 15:55:38,635 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 15:55:38,636 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 15:55:38,791 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 15:55:42,301 [worker.voice] INFO: sounddevice OK
+2026-05-12 15:55:42,332 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 15:55:42,397 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 15:55:42,397 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 15:55:42,539 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 15:55:42,539 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 15:55:42,540 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 15:55:43,145 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 15:57:40,473 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: [WinError -2147221008] Не был произведен вызов CoInitialize
+2026-05-12 15:57:40,473 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 15:57:51,071 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 15:57:51,101 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 15:58:40,812 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость на 30»
+2026-05-12 15:58:40,815 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 15:58:46,136 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 15:58:46,136 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 15:58:46,173 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 15:58:55,790 [worker.main] INFO: Выход через трей
+2026-05-12 15:58:55,805 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 15:59:16,190 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 15:59:16,190 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 15:59:16,355 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 15:59:19,804 [worker.voice] INFO: sounddevice OK
+2026-05-12 15:59:19,826 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 15:59:19,871 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 15:59:19,871 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 15:59:19,981 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 15:59:19,982 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 15:59:19,982 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 15:59:20,463 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:00:01,130 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: [WinError -2147221008] Не был произведен вызов CoInitialize
+2026-05-12 16:00:01,130 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:00:03,336 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:00:03,368 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:00:08,177 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «icloud»
+2026-05-12 16:00:08,238 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:00:20,240 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «icloud»
+2026-05-12 16:00:20,293 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:00:26,224 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «открой pubg»
+2026-05-12 16:00:26,287 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:00:32,820 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «открой cloud»
+2026-05-12 16:00:32,834 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:00:40,515 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:00:40,516 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:00:40,575 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:01:38,302 [worker.main] INFO: Выход через трей
+2026-05-12 16:01:38,316 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 16:01:53,153 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:01:53,153 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:01:53,338 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:01:56,713 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:01:56,755 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:01:56,784 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:01:56,784 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:01:56,858 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:01:56,858 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:01:56,858 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:01:57,038 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:02:18,691 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «открой club»
+2026-05-12 16:02:55,006 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:02:55,063 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:03:18,037 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-12 16:03:18,045 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-12 16:03:18,058 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:04:01,682 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «открой гугл»
+2026-05-12 16:04:01,693 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:04:56,013 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «шнырь»
+2026-05-12 16:04:56,019 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:04:59,895 [worker.main] INFO: Выход через трей
+2026-05-12 16:04:59,918 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 16:05:54,543 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:05:54,543 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:05:54,706 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:05:58,159 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:05:58,181 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:05:58,225 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:05:58,226 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:05:58,337 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:05:58,337 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:05:58,337 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:05:58,831 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:06:44,122 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:07:00,804 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:07:00,804 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:07:00,807 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:07:39,081 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-12 16:07:39,090 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-12 16:07:39,092 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:08:16,943 [worker.main] INFO: Выход через трей
+2026-05-12 16:08:16,968 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 16:10:39,742 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:10:39,742 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:10:39,875 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:10:43,240 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:10:43,283 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:10:43,312 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:10:43,312 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:10:43,384 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:10:43,385 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:10:43,385 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:10:43,597 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:11:03,830 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: [WinError -2147221008] Не был произведен вызов CoInitialize
+2026-05-12 16:11:03,830 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:11:19,247 [worker.main] INFO: Выход через трей
+2026-05-12 16:11:19,262 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 16:14:08,559 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:14:08,560 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:14:08,773 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:14:12,219 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:14:12,322 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:14:12,381 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:14:12,381 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:14:12,501 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:14:12,501 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:14:12,501 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:14:12,791 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:14:18,723 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:14:49,469 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:14:49,469 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:14:49,531 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:14:55,260 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-12 16:14:55,270 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-12 16:14:55,285 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:15:01,580 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «открой cloud»
+2026-05-12 16:15:01,633 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:15:39,357 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:15:39,372 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:16:01,208 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:16:01,208 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:16:01,216 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:16:11,146 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-12 16:16:11,156 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-12 16:16:11,172 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:18:56,223 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:18:56,224 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:18:56,448 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:18:59,883 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:18:59,976 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:19:00,029 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:19:00,029 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:19:00,130 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:19:00,131 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:19:00,131 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:19:00,409 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:19:31,767 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:20:40,451 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:20:40,480 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:20:55,561 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-12 16:20:55,571 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-12 16:20:55,589 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:21:00,781 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:21:00,781 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:21:00,785 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:22:10,192 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:22:10,192 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:22:10,232 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:22:18,909 [worker.commands.volume] ERROR: Не удалось получить контроллер громкости: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:22:18,909 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:22:18,961 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:22:25,883 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «какой»
+2026-05-12 16:22:25,896 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:22:27,566 [worker.main] INFO: Выход через трей
+2026-05-12 16:22:27,587 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 16:24:59,270 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:24:59,270 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:24:59,427 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:25:02,901 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:25:02,923 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:25:02,967 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:25:02,967 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:25:03,078 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:25:03,079 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:25:03,079 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:25:03,575 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:25:10,734 [worker.commands.volume] ERROR: Ошибка контроллера громкости: OSError: [WinError -2147221008] Не был произведен вызов CoInitialize
+2026-05-12 16:25:10,734 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:25:16,105 [worker.commands.volume] ERROR: Ошибка контроллера громкости: AttributeError: 'AudioDevice' object has no attribute 'Activate'
+2026-05-12 16:25:16,106 [jarvis.dispatcher] INFO: [RESPONSE] Не удалось получить доступ к звуку системы.
+2026-05-12 16:25:16,145 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:28:32,545 [worker.main] INFO: Выход через трей
+2026-05-12 16:28:32,563 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 16:28:39,071 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:28:39,072 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:28:39,227 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:28:42,678 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:28:42,700 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:28:42,745 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:28:42,745 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:28:42,857 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:28:42,857 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:28:42,857 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:28:43,349 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:28:55,313 [worker.commands.volume] INFO: Громкость установлена: 90%
+2026-05-12 16:28:55,313 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 90%.
+2026-05-12 16:29:36,706 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-12 16:29:36,706 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 100%.
+2026-05-12 16:29:36,721 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:29:42,535 [worker.commands.volume] INFO: Громкость установлена: 90%
+2026-05-12 16:29:42,535 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 90%.
+2026-05-12 16:29:42,581 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:29:47,005 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «на»
+2026-05-12 16:29:47,056 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:29:53,536 [worker.commands.volume] INFO: Громкость установлена: 60%
+2026-05-12 16:29:53,537 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 60%.
+2026-05-12 16:29:53,541 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:30:04,771 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-12 16:30:04,771 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-12 16:30:04,809 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:30:37,649 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «включи звук»
+2026-05-12 16:30:37,671 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:30:44,771 [worker.commands.volume] INFO: Громкость установлена: 0%
+2026-05-12 16:30:44,771 [jarvis.dispatcher] INFO: [RESPONSE] Звук выключен.
+2026-05-12 16:30:44,820 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:30:51,246 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-12 16:30:51,246 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-12 16:30:51,299 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:32:33,774 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 16:32:33,775 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 16:32:33,993 [worker.ui] INFO: Фон: (1920, 1080)
+2026-05-12 16:32:37,463 [worker.voice] INFO: sounddevice OK
+2026-05-12 16:32:37,554 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 16:32:37,607 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 16:32:37,607 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 16:32:37,730 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 16:32:37,730 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 16:32:37,730 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 16:32:38,361 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 16:33:00,224 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость»
+2026-05-12 16:33:06,143 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-12 16:33:06,143 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-12 16:33:06,146 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:33:17,379 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 16:33:17,430 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:44:03,369 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «вторая как-то интересно»
+2026-05-12 16:44:03,420 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:51:06,114 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «всё нормально»
+2026-05-12 16:51:06,135 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:52:59,464 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «10.000 раз»
+2026-05-12 16:52:59,491 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:53:06,993 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «300.000»
+2026-05-12 16:53:07,032 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 16:55:03,248 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «максим»
+2026-05-12 16:55:03,289 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 17:03:41,462 [worker.main] INFO: Выход через трей
+2026-05-12 17:03:41,475 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-12 17:09:11,308 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-12 17:09:11,308 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-12 17:09:11,574 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-12 17:09:15,004 [worker.voice] INFO: sounddevice OK
+2026-05-12 17:09:15,104 [worker.voice] INFO: SpeechRecognition OK
+2026-05-12 17:09:15,158 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-12 17:09:15,158 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-12 17:09:15,257 [worker.voice] INFO: pyttsx3 OK
+2026-05-12 17:09:15,257 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-12 17:09:15,257 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-12 17:09:17,874 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-12 17:10:14,280 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-12 17:10:28,421 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «максимальная»
+2026-05-12 17:10:28,439 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-12 17:10:33,607 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-12 17:10:33,607 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-12 17:10:33,609 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:46:19,767 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-13 13:46:19,768 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-13 13:46:20,046 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-13 13:46:23,499 [worker.voice] INFO: sounddevice OK
+2026-05-13 13:46:23,595 [worker.voice] INFO: SpeechRecognition OK
+2026-05-13 13:46:23,651 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-13 13:46:23,651 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-13 13:46:23,755 [worker.voice] INFO: pyttsx3 OK
+2026-05-13 13:46:23,755 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-13 13:46:23,755 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-13 13:46:24,555 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-13 13:50:09,702 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «видеокарта»
+2026-05-13 13:52:13,190 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-13 13:52:13,191 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-13 13:52:13,367 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-13 13:52:16,750 [worker.voice] INFO: sounddevice OK
+2026-05-13 13:52:16,794 [worker.voice] INFO: SpeechRecognition OK
+2026-05-13 13:52:16,825 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-13 13:52:16,825 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-13 13:52:16,898 [worker.voice] INFO: pyttsx3 OK
+2026-05-13 13:52:16,898 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-13 13:52:16,898 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-13 13:52:17,090 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-13 13:52:32,204 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-13 13:52:32,240 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:53:53,357 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «да что единорога купил»
+2026-05-13 13:53:53,386 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:55:11,766 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-13 13:55:11,778 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-13 13:55:11,803 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:55:19,666 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-13 13:55:19,676 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-13 13:55:19,701 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:55:27,420 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что он ещё не умеет»
+2026-05-13 13:55:27,478 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:55:29,733 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «на 30»
+2026-05-13 13:55:29,782 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:55:33,992 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-13 13:55:33,992 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-13 13:55:33,997 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:56:00,712 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-13 13:56:00,712 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-13 13:56:00,736 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:56:08,419 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «микроны»
+2026-05-13 13:56:08,478 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:56:38,990 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «у меня короче вот»
+2026-05-13 13:56:39,017 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:56:41,354 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «telegram я»
+2026-05-13 13:56:41,360 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:56:54,259 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ну короче из-за того что»
+2026-05-13 13:56:54,265 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:57:01,518 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «типа так ну вот просто»
+2026-05-13 13:57:01,564 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 13:57:17,472 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «у меня стоял на»
+2026-05-13 13:57:17,531 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 14:41:29,583 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «отпуска»
+2026-05-13 14:41:29,596 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 14:45:14,743 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «в интернете»
+2026-05-13 14:45:14,800 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 14:58:58,975 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «мне»
+2026-05-13 14:58:58,984 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 16:01:52,450 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-13 16:01:52,477 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 16:08:37,456 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «всю эту хуйню»
+2026-05-13 16:08:37,481 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 16:09:40,706 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я серьёзно говорю»
+2026-05-13 16:09:40,768 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 17:24:03,128 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «это не про нас»
+2026-05-13 17:24:03,161 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 18:01:07,541 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «кстати»
+2026-05-13 18:01:07,566 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 18:15:24,067 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «потеряли»
+2026-05-13 18:15:24,120 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 18:15:26,985 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «иди на хуй я»
+2026-05-13 18:15:27,040 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 18:16:25,581 [worker.main] INFO: Выход через трей
+2026-05-13 18:16:25,598 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-13 18:19:14,120 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-13 18:19:14,121 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-13 18:19:14,299 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-13 18:19:17,678 [worker.voice] INFO: sounddevice OK
+2026-05-13 18:19:17,719 [worker.voice] INFO: SpeechRecognition OK
+2026-05-13 18:19:17,749 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-13 18:19:17,749 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-13 18:19:17,824 [worker.voice] INFO: pyttsx3 OK
+2026-05-13 18:19:17,825 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-13 18:19:17,825 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-13 18:19:18,052 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-13 21:39:13,590 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-13 21:39:13,591 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-13 21:39:13,853 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-13 21:39:17,308 [worker.voice] INFO: sounddevice OK
+2026-05-13 21:39:17,402 [worker.voice] INFO: SpeechRecognition OK
+2026-05-13 21:39:17,457 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-13 21:39:17,457 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-13 21:39:17,563 [worker.voice] INFO: pyttsx3 OK
+2026-05-13 21:39:17,563 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-13 21:39:17,563 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-13 21:39:18,592 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-13 21:52:36,868 [worker.voice] ERROR: Ошибка записи: Remote end closed connection without response
+2026-05-13 22:05:53,676 [worker.voice] ERROR: Ошибка записи: Remote end closed connection without response
+2026-05-13 22:06:09,595 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «нет сюда на главный экран»
+2026-05-13 22:06:20,460 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-13 22:06:20,467 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:06:27,940 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-13 22:06:27,949 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-13 22:06:27,986 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:06:49,744 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-13 22:06:49,753 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-13 22:06:49,790 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:08:02,426 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «у меня что-то»
+2026-05-13 22:08:02,481 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:08:14,954 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я»
+2026-05-13 22:08:14,965 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:12:49,537 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «14»
+2026-05-13 22:12:49,562 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:16:04,558 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:16:25,441 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:16:36,910 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:16:44,222 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:16:59,041 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:17:13,540 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:17:22,041 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:18:20,306 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:18:56,660 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:19:06,893 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:19:27,878 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:19:53,670 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:20:00,982 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:20:29,096 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:21:41,575 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:21:59,841 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:22:16,013 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:22:30,473 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:23:10,438 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:23:23,694 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:23:31,005 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:23:39,505 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:23:52,757 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:24:37,812 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:25:10,656 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:25:24,501 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:25:50,738 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:25:58,050 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:26:08,927 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:26:58,310 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:27:12,739 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:27:20,647 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:30:12,629 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:30:27,072 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:30:44,489 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:30:53,583 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:31:28,666 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «он»
+2026-05-13 22:31:28,721 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:31:42,600 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:31:53,476 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:32:02,571 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:32:19,915 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:33:12,410 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:34:04,313 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:34:17,276 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:34:55,741 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:35:04,244 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:36:00,623 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:36:28,173 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-13 22:37:17,319 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «смотри»
+2026-05-13 22:37:17,365 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:47:10,572 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «прикинь»
+2026-05-13 22:47:10,633 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 22:51:30,388 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ты что ты»
+2026-05-13 22:51:30,399 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:02:58,750 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «у меня»
+2026-05-13 23:02:58,795 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:08:39,953 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «да нет мне»
+2026-05-13 23:08:39,955 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:10:02,445 [worker.voice] ERROR: Ошибка записи: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+2026-05-13 23:20:53,624 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «это куда»
+2026-05-13 23:20:53,653 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:45:49,330 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-13 23:45:49,374 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:52:17,259 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «звёзды»
+2026-05-13 23:52:17,274 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:52:32,906 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «как прошёл разбуди меня немного позже»
+2026-05-13 23:52:32,954 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:55:34,483 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «против меня»
+2026-05-13 23:55:34,485 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-13 23:55:42,556 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ты знаешь»
+2026-05-13 23:55:42,595 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-14 00:07:21,711 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «фишки»
+2026-05-14 00:07:21,729 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-14 00:17:31,863 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что»
+2026-05-14 00:17:31,888 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-14 00:19:07,280 [worker.main] INFO: Выход через трей
+2026-05-14 00:19:07,308 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-14 00:22:29,947 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-14 00:22:29,947 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-14 00:22:30,273 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-14 00:22:33,722 [worker.voice] INFO: sounddevice OK
+2026-05-14 00:22:33,811 [worker.voice] INFO: SpeechRecognition OK
+2026-05-14 00:22:33,863 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-14 00:22:33,863 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-14 00:22:33,949 [worker.voice] INFO: pyttsx3 OK
+2026-05-14 00:22:33,950 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-14 00:22:33,950 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-14 00:22:36,520 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-14 00:23:00,476 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-14 00:30:03,433 [worker.main] INFO: Выход через трей
+2026-05-14 00:30:03,454 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-14 23:59:12,232 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-14 23:59:12,233 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-14 23:59:12,491 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-14 23:59:15,959 [worker.voice] INFO: sounddevice OK
+2026-05-14 23:59:16,152 [worker.voice] INFO: SpeechRecognition OK
+2026-05-14 23:59:16,211 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-14 23:59:16,212 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-14 23:59:16,297 [worker.voice] INFO: pyttsx3 OK
+2026-05-14 23:59:16,298 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-14 23:59:16,298 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-14 23:59:16,629 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-14 23:59:21,604 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-14 23:59:30,344 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «короче он плохо»
+2026-05-14 23:59:30,365 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-14 23:59:35,670 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «короче смотри»
+2026-05-14 23:59:35,676 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-14 23:59:37,453 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-14 23:59:37,462 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-14 23:59:37,496 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-14 23:59:46,266 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость на минимум»
+2026-05-14 23:59:46,302 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-14 23:59:52,937 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-14 23:59:52,937 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-14 23:59:52,968 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 00:00:04,849 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-15 00:00:04,849 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-15 00:00:04,885 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 00:00:11,527 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «уборки мои короче»
+2026-05-15 00:00:11,554 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 00:00:14,745 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «маньяк вообще жёстко сукко»
+2026-05-15 00:00:14,797 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 20:44:10,280 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 20:44:10,281 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 20:44:10,542 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 20:44:13,985 [worker.voice] INFO: sounddevice OK
+2026-05-15 20:44:14,071 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 20:44:14,125 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 20:44:14,126 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 20:44:14,210 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 20:44:14,211 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 20:44:14,211 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 20:44:15,303 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 20:48:59,414 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ну я надеюсь что»
+2026-05-15 20:59:50,278 [worker.main] INFO: Выход через трей
+2026-05-15 20:59:50,304 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-15 21:03:00,488 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 21:03:00,488 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 21:03:00,666 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 21:03:04,098 [worker.voice] INFO: sounddevice OK
+2026-05-15 21:03:04,119 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 21:03:04,155 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 21:03:04,155 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 21:03:04,253 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 21:03:04,253 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 21:03:04,253 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 21:03:04,757 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 21:03:40,003 [jarvis.dispatcher] INFO: [RESPONSE] Процессор 8%. Память 8.2 из 31.9 ГБ.
+2026-05-15 21:08:58,635 [worker.voice] ERROR: Ошибка записи: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+2026-05-15 21:11:21,233 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «не понял»
+2026-05-15 21:11:21,278 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 21:12:17,526 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «17»
+2026-05-15 21:12:17,550 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 22:52:57,685 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 22:52:57,686 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 22:52:57,860 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 22:53:01,222 [worker.voice] INFO: sounddevice OK
+2026-05-15 22:53:01,260 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 22:53:01,288 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 22:53:01,288 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 22:53:01,347 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 22:53:01,348 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 22:53:01,348 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 22:53:01,581 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 22:53:24,638 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «воспроизвести»
+2026-05-15 22:57:52,437 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «короче мы недавно нитки были»
+2026-05-15 22:57:52,483 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:00:04,877 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ну да а ну да я в ней в том числе»
+2026-05-15 23:00:04,892 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:10:27,012 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 23:10:27,013 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 23:10:27,195 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 23:10:30,658 [worker.voice] INFO: sounddevice OK
+2026-05-15 23:10:30,677 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 23:10:30,712 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 23:10:30,713 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 23:10:30,801 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 23:10:30,802 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 23:10:30,802 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 23:10:31,379 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 23:11:16,295 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:11:41,816 [worker.main] INFO: Выход через трей
+2026-05-15 23:11:41,856 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-15 23:19:33,928 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 23:19:33,929 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 23:19:34,150 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 23:19:37,583 [worker.voice] INFO: sounddevice OK
+2026-05-15 23:19:37,604 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 23:19:37,641 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 23:19:37,641 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 23:19:37,729 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 23:19:37,730 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 23:19:37,730 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 23:19:38,226 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 23:19:46,241 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:19:54,734 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:20:02,630 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:20:41,338 [worker.main] INFO: Выход через трей
+2026-05-15 23:20:41,360 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-15 23:20:48,002 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 23:20:48,003 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 23:20:48,213 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 23:20:51,649 [worker.voice] INFO: sounddevice OK
+2026-05-15 23:20:51,670 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 23:20:51,708 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 23:20:51,708 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 23:20:51,802 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 23:20:51,803 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 23:20:51,803 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 23:20:52,301 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 23:21:11,611 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:21:27,376 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:21:35,872 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:21:46,774 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:21:58,131 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:22:36,897 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:22:48,240 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:23:07,703 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:23:16,199 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:23:16,532 [worker.main] INFO: Выход через трей
+2026-05-15 23:23:16,562 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-15 23:24:20,054 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 23:24:20,054 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 23:24:20,261 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 23:24:23,726 [worker.voice] INFO: sounddevice OK
+2026-05-15 23:24:23,746 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 23:24:23,791 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 23:24:23,791 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 23:24:23,890 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 23:24:23,890 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 23:24:23,890 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 23:24:24,391 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 23:24:34,193 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:24:44,963 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:25:02,590 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:25:07,928 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-15 23:25:15,921 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-15 23:25:15,922 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-15 23:25:15,954 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:25:21,323 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость максимум»
+2026-05-15 23:25:21,334 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:25:31,105 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:25:38,410 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:25:47,960 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость»
+2026-05-15 23:25:47,972 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:25:53,416 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-15 23:25:53,416 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 100%.
+2026-05-15 23:25:53,457 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:26:02,632 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:26:26,786 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:28:39,817 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:28:51,897 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:29:09,936 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:29:21,440 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:29:39,491 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:30:52,420 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я хочу очень песню очень-очень-очень хочу»
+2026-05-15 23:30:52,478 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:31:04,467 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь нахуй блядь ёб твою мать просто мозги мне не еби сделать»
+2026-05-15 23:31:04,478 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-15 23:31:04,783 [worker.main] INFO: Выход через трей
+2026-05-15 23:31:04,819 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-15 23:31:10,716 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 23:31:10,717 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 23:31:10,929 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 23:31:14,397 [worker.voice] INFO: sounddevice OK
+2026-05-15 23:31:14,419 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 23:31:14,462 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 23:31:14,462 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 23:31:14,566 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 23:31:14,567 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 23:31:14,567 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 23:31:15,099 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 23:32:21,454 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:32:25,254 [worker.main] INFO: Выход через трей
+2026-05-15 23:32:25,277 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-15 23:44:44,734 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 23:44:44,734 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 23:44:44,936 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 23:44:48,405 [worker.voice] INFO: sounddevice OK
+2026-05-15 23:44:48,429 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 23:44:48,473 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 23:44:48,473 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 23:44:48,584 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 23:44:48,585 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 23:44:48,585 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 23:44:49,127 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 23:44:55,964 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:45:00,892 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я теперь трубку не брать»
+2026-05-15 23:49:04,887 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:49:29,074 [worker.main] INFO: Выход через трей
+2026-05-15 23:49:29,110 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-15 23:57:16,308 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-15 23:57:16,309 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-15 23:57:16,527 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-15 23:57:19,992 [worker.voice] INFO: sounddevice OK
+2026-05-15 23:57:20,018 [worker.voice] INFO: SpeechRecognition OK
+2026-05-15 23:57:20,069 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-15 23:57:20,069 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-15 23:57:20,178 [worker.voice] INFO: pyttsx3 OK
+2026-05-15 23:57:20,179 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-15 23:57:20,179 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-15 23:57:20,714 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-15 23:57:31,701 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я хочу»
+2026-05-15 23:58:56,553 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-15 23:59:12,810 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «какая высота жёсткого и жёстко»
+2026-05-15 23:59:12,830 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:02:44,508 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:03:20,347 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:03:28,846 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:03:43,947 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:03:54,224 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:08:14,337 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:08:22,235 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:09:07,790 [worker.main] INFO: Выход через трей
+2026-05-16 00:09:07,811 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-16 00:25:28,557 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-16 00:25:28,558 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-16 00:25:28,772 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-16 00:25:32,228 [worker.voice] INFO: sounddevice OK
+2026-05-16 00:25:32,251 [worker.voice] INFO: SpeechRecognition OK
+2026-05-16 00:25:32,296 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-16 00:25:32,296 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-16 00:25:32,403 [worker.voice] INFO: pyttsx3 OK
+2026-05-16 00:25:32,403 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-16 00:25:32,403 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-16 00:25:32,917 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-16 00:25:44,511 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:27:45,603 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-16 00:27:45,604 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-16 00:27:45,878 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-16 00:27:49,331 [worker.voice] INFO: sounddevice OK
+2026-05-16 00:27:49,420 [worker.voice] INFO: SpeechRecognition OK
+2026-05-16 00:27:49,485 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-16 00:27:49,485 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-16 00:27:49,573 [worker.voice] INFO: pyttsx3 OK
+2026-05-16 00:27:49,573 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-16 00:27:49,573 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-16 00:27:51,368 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-16 00:28:19,121 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:28:28,806 [worker.voice] ERROR: Ошибка записи: Remote end closed connection without response
+2026-05-16 00:28:32,873 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «а»
+2026-05-16 00:28:42,656 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:28:53,840 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «а»
+2026-05-16 00:28:53,872 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:28:54,434 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «а»
+2026-05-16 00:28:54,489 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:28:55,027 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «а»
+2026-05-16 00:28:55,044 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:28:57,993 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «открой музыка»
+2026-05-16 00:28:58,020 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:29:02,810 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-16 00:29:02,848 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:29:15,571 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:29:58,523 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-16 00:29:58,523 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-16 00:29:58,539 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:30:48,704 [worker.commands.volume] INFO: Громкость установлена: 40%
+2026-05-16 00:30:48,704 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 40%.
+2026-05-16 00:30:48,728 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:30:59,681 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:31:04,952 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-16 00:31:04,955 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:31:16,436 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-16 00:31:16,437 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-16 00:31:16,446 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:31:52,425 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-16 00:32:04,885 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-16 00:32:04,896 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-16 00:32:04,934 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:32:38,050 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-16 00:32:38,100 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:32:42,906 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-16 00:32:42,906 [jarvis.dispatcher] INFO: [RESPONSE] Громкость на максимуме.
+2026-05-16 00:32:42,953 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:32:47,045 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-16 00:32:47,078 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:32:51,337 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-16 00:32:51,346 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-16 00:32:51,385 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:32:56,762 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-16 00:32:56,812 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:33:07,375 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-16 00:33:07,375 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-16 00:33:07,427 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:33:11,596 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость максимум»
+2026-05-16 00:33:11,611 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 00:33:25,011 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-16 00:33:25,011 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 100%.
+2026-05-16 00:33:25,036 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-16 17:07:51,372 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-16 17:07:51,373 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-16 17:07:51,637 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-16 17:07:55,039 [worker.voice] INFO: sounddevice OK
+2026-05-16 17:07:55,124 [worker.voice] INFO: SpeechRecognition OK
+2026-05-16 17:07:55,179 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-16 17:07:55,179 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-16 17:07:55,271 [worker.voice] INFO: pyttsx3 OK
+2026-05-16 17:07:55,272 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-16 17:07:55,272 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-16 17:07:56,787 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 19:41:43,119 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 19:41:43,120 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 19:41:43,373 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 19:41:46,789 [worker.voice] INFO: sounddevice OK
+2026-05-18 19:41:46,878 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 19:41:46,945 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 19:41:46,945 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 19:41:47,033 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 19:41:47,033 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 19:41:47,033 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 19:41:49,020 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 19:57:25,949 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «долбоёб»
+2026-05-18 20:29:19,735 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-18 20:29:19,750 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-18 20:34:08,283 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь ху»
+2026-05-18 20:34:08,318 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-18 20:49:07,462 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «пистолет без»
+2026-05-18 20:49:07,476 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-18 20:55:13,091 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь ёб твою мать нахуй»
+2026-05-18 20:55:13,134 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-18 21:25:31,630 [worker.main] INFO: Выход через трей
+2026-05-18 21:25:31,666 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-18 21:31:30,364 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 21:31:30,364 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 21:31:30,569 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 21:31:34,026 [worker.voice] INFO: sounddevice OK
+2026-05-18 21:31:34,055 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 21:31:34,101 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 21:31:34,101 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 21:31:34,201 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 21:31:34,202 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 21:31:34,202 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 21:31:34,745 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 21:32:13,172 [worker.main] INFO: Выход через трей
+2026-05-18 21:32:13,209 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-18 21:49:31,693 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 21:49:31,693 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 21:49:31,876 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 21:49:35,336 [worker.voice] INFO: sounddevice OK
+2026-05-18 21:49:35,357 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 21:49:35,403 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 21:49:35,403 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 21:49:35,504 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 21:49:35,504 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 21:49:35,504 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 21:49:36,058 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 21:57:02,663 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ну-ка иди отсюда нахуй»
+2026-05-18 21:57:43,081 [worker.main] INFO: Выход через трей
+2026-05-18 21:57:43,114 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-18 22:02:31,043 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:02:31,044 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:02:31,250 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:02:34,710 [worker.voice] INFO: sounddevice OK
+2026-05-18 22:02:34,731 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 22:02:34,778 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 22:02:34,778 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 22:02:34,883 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 22:02:34,883 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 22:02:34,883 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 22:02:35,445 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 22:03:53,442 [worker.main] INFO: Выход через трей
+2026-05-18 22:03:53,461 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-18 22:03:57,352 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:03:57,352 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:03:57,564 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:04:01,009 [worker.voice] INFO: sounddevice OK
+2026-05-18 22:04:01,031 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 22:04:01,077 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 22:04:01,077 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 22:04:01,188 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 22:04:01,189 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 22:04:01,189 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 22:04:01,741 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 22:04:30,928 [worker.main] INFO: Выход через трей
+2026-05-18 22:04:30,969 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-18 22:07:24,018 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:07:24,018 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:07:24,210 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:07:27,706 [worker.voice] INFO: sounddevice OK
+2026-05-18 22:07:27,727 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 22:07:27,770 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 22:07:27,770 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 22:07:27,869 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 22:07:27,870 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 22:07:27,870 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 22:07:28,394 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 22:08:37,115 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «58»
+2026-05-18 22:09:20,707 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:09:20,707 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:09:20,901 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:09:24,363 [worker.voice] INFO: sounddevice OK
+2026-05-18 22:09:24,383 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 22:09:24,427 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 22:09:24,428 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 22:09:24,526 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 22:09:24,527 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 22:09:24,527 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 22:09:25,042 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 22:09:48,685 [worker.main] INFO: Выход через трей
+2026-05-18 22:09:48,718 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-18 22:09:57,614 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:09:57,614 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:09:57,817 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:10:01,310 [worker.voice] INFO: sounddevice OK
+2026-05-18 22:10:01,331 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 22:10:01,374 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 22:10:01,374 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 22:10:01,473 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 22:10:01,474 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 22:10:01,474 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 22:10:02,009 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 22:10:24,854 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-18 22:11:05,607 [worker.voice] ERROR: Ошибка записи: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+2026-05-18 22:11:48,815 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-18 22:25:34,647 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:25:34,648 [worker.main] INFO: Автозапуск зарегистрирован: "c:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:25:34,882 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:26:49,857 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:26:49,858 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:26:50,119 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:27:32,787 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:27:32,787 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:27:32,925 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:29:04,955 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:29:04,956 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:29:05,138 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:33:59,271 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:33:59,271 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:33:59,425 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:34:02,704 [worker.voice] INFO: sounddevice OK
+2026-05-18 22:34:02,758 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 22:34:02,803 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 22:34:02,803 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 22:34:02,886 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 22:34:02,887 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 22:34:02,887 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 22:34:03,173 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 22:34:39,727 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-18 22:34:49,994 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-18 22:34:52,928 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-18 22:35:05,081 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-18 22:35:23,660 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-18 22:35:37,490 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-18 22:35:53,104 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-18 22:35:56,011 [worker.main] INFO: Выход через трей
+2026-05-18 22:35:56,043 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-18 22:42:37,424 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-18 22:42:37,424 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-18 22:42:37,567 [worker.ui] INFO: Фон: (1672, 941)
+2026-05-18 22:42:40,590 [worker.voice] INFO: sounddevice OK
+2026-05-18 22:42:40,607 [worker.voice] INFO: SpeechRecognition OK
+2026-05-18 22:42:40,638 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-18 22:42:40,639 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-18 22:42:40,706 [worker.voice] INFO: pyttsx3 OK
+2026-05-18 22:42:40,706 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-18 22:42:40,706 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-18 22:42:40,882 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-18 22:42:51,020 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-19 01:11:58,646 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-19 01:11:58,647 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-19 01:12:01,319 [worker.voice] INFO: sounddevice OK
+2026-05-19 01:12:01,356 [worker.voice] INFO: SpeechRecognition OK
+2026-05-19 01:12:01,385 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-19 01:12:01,385 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-19 01:12:01,444 [worker.voice] INFO: pyttsx3 OK
+2026-05-19 01:12:01,444 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-19 01:12:01,444 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-19 01:12:01,657 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-19 01:12:29,858 [worker.main] INFO: Выход через трей
+2026-05-19 01:12:29,873 [worker.main] INFO: === W.O.R.K.E.R завершён ===
+2026-05-19 22:02:00,876 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-19 22:02:00,876 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-19 22:02:03,725 [worker.voice] INFO: sounddevice OK
+2026-05-19 22:02:03,807 [worker.voice] INFO: SpeechRecognition OK
+2026-05-19 22:02:03,856 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-19 22:02:03,856 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-19 22:02:03,939 [worker.voice] INFO: pyttsx3 OK
+2026-05-19 22:02:03,939 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-19 22:02:03,939 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-19 22:02:05,655 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-19 23:26:14,133 [worker.voice] ERROR: Ошибка записи: Remote end closed connection without response
+2026-05-20 15:28:55,266 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-20 15:29:31,480 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-20 15:29:31,502 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:29:39,734 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-20 15:29:39,744 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-20 15:29:39,798 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:29:46,373 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-20 15:29:46,374 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-20 15:29:46,413 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:30:20,670 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость максимум»
+2026-05-20 15:30:20,692 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:30:24,536 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «громкость на 100»
+2026-05-20 15:30:24,544 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:30:35,910 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-20 15:30:35,910 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 100%.
+2026-05-20 15:30:35,962 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:31:27,977 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-20 15:31:27,986 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:31:43,942 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-20 15:31:43,951 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-20 15:31:43,956 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:31:49,862 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-20 15:31:49,862 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-20 15:31:49,866 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:31:53,385 [worker.commands.volume] INFO: Громкость установлена: 80%
+2026-05-20 15:31:53,385 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 80%.
+2026-05-20 15:31:53,393 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:31:59,754 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-20 15:31:59,754 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 100%.
+2026-05-20 15:31:59,815 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 15:36:39,787 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «да»
+2026-05-20 15:36:39,806 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 18:25:32,084 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-20 18:25:32,085 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-20 18:25:34,943 [worker.voice] INFO: sounddevice OK
+2026-05-20 18:25:35,026 [worker.voice] INFO: SpeechRecognition OK
+2026-05-20 18:25:35,077 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-20 18:25:35,077 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-20 18:25:35,164 [worker.voice] INFO: pyttsx3 OK
+2026-05-20 18:25:35,164 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-20 18:25:35,165 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-20 18:25:37,431 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-20 18:25:45,190 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-20 19:36:34,686 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «скажите пусть»
+2026-05-20 19:36:34,715 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 19:38:07,191 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «мне очень нравится я говорю»
+2026-05-20 19:38:07,226 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-20 22:35:27,979 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-20 22:35:27,980 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-20 22:35:30,877 [worker.voice] INFO: sounddevice OK
+2026-05-20 22:35:30,963 [worker.voice] INFO: SpeechRecognition OK
+2026-05-20 22:35:31,017 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-20 22:35:31,017 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-20 22:35:31,101 [worker.voice] INFO: pyttsx3 OK
+2026-05-20 22:35:31,102 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-20 22:35:31,102 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-20 22:35:32,990 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-21 20:29:21,219 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-21 20:29:21,220 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-21 20:29:24,107 [worker.voice] INFO: sounddevice OK
+2026-05-21 20:29:24,191 [worker.voice] INFO: SpeechRecognition OK
+2026-05-21 20:29:24,245 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-21 20:29:24,245 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-21 20:29:24,332 [worker.voice] INFO: pyttsx3 OK
+2026-05-21 20:29:24,333 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-21 20:29:24,333 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-21 20:29:26,974 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-21 20:42:36,284 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «песня»
+2026-05-21 20:49:43,821 [worker.voice] ERROR: Ошибка записи: IncompleteRead(14 bytes read)
+2026-05-21 21:17:03,958 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «короче»
+2026-05-21 21:17:04,013 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-21 21:27:32,573 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «как есть»
+2026-05-21 21:27:32,613 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-21 21:52:08,673 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «дисплей»
+2026-05-21 21:52:08,700 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-21 21:54:06,444 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «всё это есть»
+2026-05-21 21:54:06,486 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-21 23:21:40,436 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «да иди на хуй»
+2026-05-21 23:21:40,454 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:03:31,504 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-22 00:03:31,550 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:11:29,151 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что за хуйня блядь»
+2026-05-22 00:11:29,199 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:16:16,842 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «иди на хуй блядь»
+2026-05-22 00:16:16,894 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:18:17,620 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь можешь»
+2026-05-22 00:18:17,644 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:43:03,123 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что-то блядь»
+2026-05-22 00:43:03,156 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:50:36,828 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «дурак»
+2026-05-22 00:50:36,878 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:54:27,172 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «100 км между нами скажи мне эти»
+2026-05-22 00:54:27,206 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:54:58,198 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я ненавижу твои бывшие nena»
+2026-05-22 00:54:58,259 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 00:55:19,632 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не буду»
+2026-05-22 00:55:19,656 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 01:12:18,856 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что видит игро»
+2026-05-22 01:12:18,876 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 02:08:05,589 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я даже»
+2026-05-22 02:08:05,611 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 02:14:41,319 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «у меня такая тема»
+2026-05-22 02:14:41,360 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 19:46:15,594 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-22 19:46:15,595 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-22 19:46:18,517 [worker.voice] INFO: sounddevice OK
+2026-05-22 19:46:18,608 [worker.voice] INFO: SpeechRecognition OK
+2026-05-22 19:46:18,664 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-22 19:46:18,664 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-22 19:46:18,751 [worker.voice] INFO: pyttsx3 OK
+2026-05-22 19:46:18,751 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-22 19:46:18,751 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-22 19:46:20,457 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-22 19:59:32,749 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «сделать»
+2026-05-22 20:01:20,805 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «деньги»
+2026-05-22 20:01:20,809 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 20:17:36,020 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «без»
+2026-05-22 20:17:36,081 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 20:46:07,197 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «сделать деньги без»
+2026-05-22 20:46:07,217 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 21:59:06,739 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ты лезешь»
+2026-05-22 21:59:06,757 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 22:28:17,519 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я возьму тебя»
+2026-05-22 22:28:17,575 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 23:01:14,599 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не»
+2026-05-22 23:01:14,628 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 23:03:08,124 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «покажи чем»
+2026-05-22 23:03:08,160 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 23:05:36,525 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «очень скучно»
+2026-05-22 23:05:36,580 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 23:19:47,135 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «смотри»
+2026-05-22 23:19:47,159 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-22 23:30:02,153 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что случилось»
+2026-05-22 23:30:02,167 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-23 00:12:23,543 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я тебя не знаю да»
+2026-05-23 00:12:23,586 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-23 00:14:24,317 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «это»
+2026-05-23 00:14:24,362 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-23 00:19:23,060 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не»
+2026-05-23 00:19:23,081 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-23 00:28:29,203 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не люблю»
+2026-05-23 00:28:29,217 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-23 00:48:58,986 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я»
+2026-05-23 00:48:59,026 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 03:39:53,081 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-24 03:39:53,082 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-24 03:39:55,916 [worker.voice] INFO: sounddevice OK
+2026-05-24 03:39:56,002 [worker.voice] INFO: SpeechRecognition OK
+2026-05-24 03:39:56,055 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-24 03:39:56,055 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-24 03:39:56,142 [worker.voice] INFO: pyttsx3 OK
+2026-05-24 03:39:56,142 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-24 03:39:56,142 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-24 03:39:58,187 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-24 03:40:12,387 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-24 03:40:20,432 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-24 03:40:20,442 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-24 03:40:20,460 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 03:40:26,833 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-24 03:40:26,834 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-24 03:40:26,849 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 03:40:34,659 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-24 03:40:34,660 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 100%.
+2026-05-24 03:40:34,702 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 20:30:31,732 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-24 20:30:31,732 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-24 20:30:34,649 [worker.voice] INFO: sounddevice OK
+2026-05-24 20:30:34,733 [worker.voice] INFO: SpeechRecognition OK
+2026-05-24 20:30:34,785 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-24 20:30:34,785 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-24 20:30:34,869 [worker.voice] INFO: pyttsx3 OK
+2026-05-24 20:30:34,870 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-24 20:30:34,870 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-24 20:30:36,517 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-24 21:01:56,315 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ди»
+2026-05-24 21:21:15,026 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:22:13,844 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:22:16,545 [worker.voice] ERROR: Ошибка записи: Remote end closed connection without response
+2026-05-24 21:22:27,853 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:23:03,840 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:23:24,870 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:24:24,577 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:24:58,422 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:25:06,923 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:25:40,389 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:26:30,797 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:27:07,206 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:28:06,008 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:28:28,763 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:28:47,348 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:30:27,340 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:31:26,491 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:31:50,753 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:32:01,632 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:32:53,146 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:33:16,417 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:33:53,354 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:34:45,222 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:34:53,125 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:35:00,437 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:35:08,940 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:39:00,123 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:39:07,437 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:39:16,532 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:40:18,793 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:41:20,024 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:41:27,348 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:41:36,460 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:41:44,964 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:41:53,477 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:43:18,881 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:43:29,764 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:43:37,082 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:43:46,774 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:44:29,710 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:44:43,554 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:44:57,396 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:45:27,850 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:46:09,950 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:46:45,435 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:47:06,464 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:47:13,775 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:47:29,393 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:47:47,287 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:47:55,192 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:48:04,878 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:48:22,832 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:48:44,749 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:50:05,237 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:50:13,148 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:50:36,049 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:51:24,704 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:52:09,234 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:52:16,548 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:52:45,242 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:53:15,731 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:53:28,388 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:54:21,033 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:54:28,942 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:54:36,853 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:54:44,168 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:55:24,967 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:55:41,877 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:55:54,536 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:56:26,921 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:56:36,612 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:56:43,926 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:56:55,135 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:57:14,049 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:57:39,900 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:58:08,703 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:58:39,025 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:58:46,936 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:59:46,980 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 21:59:57,859 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:00:29,107 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:00:56,004 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:01:09,269 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:01:16,583 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:01:25,082 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:01:34,775 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:02:03,618 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:02:36,435 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:03:36,066 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:05:33,196 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:06:49,874 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:07:34,779 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:07:47,455 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:08:28,268 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:08:45,017 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:08:52,926 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:09:04,990 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:09:47,936 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:09:55,851 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:10:03,760 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:10:21,170 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:10:51,786 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:11:15,719 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:12:15,520 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:13:16,334 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:13:44,423 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:13:53,518 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:14:18,040 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:26:54,280 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:27:03,379 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:27:22,914 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:27:38,903 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:27:58,092 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:28:17,880 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:29:27,745 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:29:57,058 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:30:25,933 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:31:21,824 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:31:54,133 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:32:42,451 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:32:54,524 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:33:03,622 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:33:13,313 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:33:43,887 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:33:53,577 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:34:02,680 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:34:11,803 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:34:27,529 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:34:36,627 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:34:46,326 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:36:01,528 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:36:17,765 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:36:50,129 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:37:07,651 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:38:30,522 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:38:41,406 [worker.voice] ERROR: Ошибка записи: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-05-24 22:53:18,002 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «да блядь как меня»
+2026-05-24 22:53:18,039 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:02:49,491 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что»
+2026-05-24 23:02:49,537 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:06:11,870 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «3 4 5 1 2 3»
+2026-05-24 23:06:11,889 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:08:05,574 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь 2,5 сукко»
+2026-05-24 23:08:05,612 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:09:54,248 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь»
+2026-05-24 23:09:54,289 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:10:10,134 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «сукко»
+2026-05-24 23:10:10,181 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:11:30,085 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь как мне вот эти ебучие ячейки»
+2026-05-24 23:11:30,148 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:13:09,642 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ну просто пиздец нахуй»
+2026-05-24 23:13:09,665 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:26:40,137 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «сукко я тебя клянусь нахуй я не»
+2026-05-24 23:26:40,174 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:31:07,410 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ты тупой сукко»
+2026-05-24 23:31:07,423 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:42:47,759 [worker.voice] ERROR: Ошибка записи: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+2026-05-24 23:42:55,064 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «иди на хуй»
+2026-05-24 23:42:55,123 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:43:01,203 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «проститутка нахуй мне похуй»
+2026-05-24 23:43:01,218 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:54:17,546 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «головняк сукко это просто»
+2026-05-24 23:54:17,596 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-24 23:56:33,838 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «так так»
+2026-05-24 23:56:33,865 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 00:07:30,470 [worker.voice] ERROR: Ошибка записи: IncompleteRead(14 bytes read)
+2026-05-25 00:08:39,209 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ветер в натуре ветер в суд»
+2026-05-25 00:08:39,249 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 00:10:28,118 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «иди на хуй блядь»
+2026-05-25 00:10:28,164 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:01:00,907 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ой блядь»
+2026-05-25 01:01:00,962 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:02:00,272 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ёбаный в рот»
+2026-05-25 01:02:00,314 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:26:52,339 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «музыка»
+2026-05-25 01:26:52,389 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:27:08,259 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «вид»
+2026-05-25 01:27:08,305 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:27:18,002 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ты будешь моей»
+2026-05-25 01:27:18,048 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:39:35,654 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ты что вообще ибанутый»
+2026-05-25 01:39:35,666 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:56:06,777 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не знаю»
+2026-05-25 01:56:06,824 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:57:22,766 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не знаю»
+2026-05-25 01:57:22,801 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:57:52,235 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «что будет война»
+2026-05-25 01:57:52,276 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 01:59:05,864 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «мама»
+2026-05-25 01:59:05,904 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 02:00:01,408 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «покажи»
+2026-05-25 02:00:01,460 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 02:06:47,517 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «анализы»
+2026-05-25 02:06:47,537 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 02:08:10,821 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не буду»
+2026-05-25 02:08:10,836 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 02:08:16,185 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «на телефон я не буду отвечать»
+2026-05-25 02:08:16,202 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 02:08:53,618 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «извиняюсь»
+2026-05-25 02:08:53,631 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 02:21:28,292 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «картошка»
+2026-05-25 02:21:28,299 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:12:05,557 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я тебя не знаю»
+2026-05-25 03:12:05,564 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:13:53,051 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «это не моя»
+2026-05-25 03:13:53,095 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:18:22,614 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «мой калашник»
+2026-05-25 03:18:22,641 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:22:37,433 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «еду»
+2026-05-25 03:22:37,494 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:22:43,534 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «мои деньги математика»
+2026-05-25 03:22:43,542 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:26:04,689 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «это не моя»
+2026-05-25 03:26:04,701 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:28:11,737 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не хочу видеть»
+2026-05-25 03:28:11,778 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:45:02,281 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «tutu»
+2026-05-25 03:45:02,291 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 03:52:30,707 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «понятно»
+2026-05-25 03:52:30,749 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 04:02:16,165 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ты хочешь со мной»
+2026-05-25 04:02:16,212 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 04:12:16,428 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я не знаю»
+2026-05-25 04:12:16,491 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-25 04:20:38,825 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «sahro»
+2026-05-25 04:20:38,849 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 01:05:53,540 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-26 01:05:53,540 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-26 01:05:56,387 [worker.voice] INFO: sounddevice OK
+2026-05-26 01:05:56,470 [worker.voice] INFO: SpeechRecognition OK
+2026-05-26 01:05:56,522 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-26 01:05:56,522 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-26 01:05:56,604 [worker.voice] INFO: pyttsx3 OK
+2026-05-26 01:05:56,605 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-26 01:05:56,605 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-26 01:05:58,384 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-26 19:14:22,349 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-26 19:14:33,945 [jarvis.dispatcher] INFO: [RESPONSE] Открываю музыку в браузере.
+2026-05-26 19:14:33,976 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:14:44,404 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-26 19:14:44,414 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-26 19:14:44,425 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:14:51,199 [worker.commands.claude_ai] INFO: Открываю Claude: https://claude.ai
+2026-05-26 19:14:51,207 [jarvis.dispatcher] INFO: [RESPONSE] Открываю Claude в браузере.
+2026-05-26 19:14:51,233 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:15:06,478 [worker.commands.volume] INFO: Громкость установлена: 70%
+2026-05-26 19:15:06,478 [jarvis.dispatcher] INFO: [RESPONSE] Громкость уменьшена до 70%.
+2026-05-26 19:15:06,486 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:15:23,931 [worker.commands.volume] INFO: Громкость установлена: 100%
+2026-05-26 19:15:23,931 [jarvis.dispatcher] INFO: [RESPONSE] Громкость увеличена до 100%.
+2026-05-26 19:15:23,959 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:27:05,562 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «так мало»
+2026-05-26 19:27:05,573 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:27:11,022 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «у меня короче если в 13»
+2026-05-26 19:27:11,074 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:27:21,062 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «вот я его купил 2892»
+2026-05-26 19:27:21,095 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 19:28:09,333 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я думал»
+2026-05-26 19:28:09,347 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:25:25,771 [worker.voice] ERROR: Ошибка записи: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+2026-05-26 20:26:22,667 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «он меня»
+2026-05-26 20:26:22,675 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:26:39,218 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «лыжные маски»
+2026-05-26 20:26:39,251 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:27:02,038 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «извини меня»
+2026-05-26 20:27:02,066 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:27:36,234 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «всех людей»
+2026-05-26 20:27:36,276 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:30:47,959 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь ну ёб твою мать сукко ну что за»
+2026-05-26 20:30:47,987 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:30:50,296 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «давай давай»
+2026-05-26 20:30:50,319 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:36:20,768 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «пидорас блядь»
+2026-05-26 20:36:20,780 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:36:26,159 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ебать»
+2026-05-26 20:36:26,187 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:36:49,138 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь вообще 5 хп оставил блин ну я пиздюков играю»
+2026-05-26 20:36:49,193 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:36:53,273 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «какая красивая»
+2026-05-26 20:36:53,292 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:37:03,107 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «7»
+2026-05-26 20:37:03,121 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:40:41,861 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ебаная дурка нахуй сколько вас тут пи»
+2026-05-26 20:40:41,900 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:41:52,191 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «это нереально просто»
+2026-05-26 20:41:52,207 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:56:44,466 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ой блядь»
+2026-05-26 20:56:44,489 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 20:57:03,742 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «да иди на хуй про»
+2026-05-26 20:57:03,773 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 21:09:09,320 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «где мы сможем»
+2026-05-26 21:09:09,339 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 21:13:48,250 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «заставлять навсегда»
+2026-05-26 21:13:48,288 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 21:13:58,090 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «чтобы»
+2026-05-26 21:13:58,098 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 22:09:21,395 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «сукко мне надо»
+2026-05-26 22:09:21,434 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 23:25:13,253 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «ёбанная блядь математика»
+2026-05-26 23:25:13,283 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 23:36:30,999 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «блядь это просто пиздец»
+2026-05-26 23:36:31,021 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 23:41:25,002 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «да иди на хуй»
+2026-05-26 23:41:25,023 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 23:43:21,984 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «утром»
+2026-05-26 23:43:21,999 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 23:43:39,558 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «baby»
+2026-05-26 23:43:39,610 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 23:50:21,467 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «я тебя прошу я тебя прошу просто умоляю открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой открой я про»
+2026-05-26 23:50:21,508 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-26 23:52:53,100 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «сукко»
+2026-05-26 23:52:53,142 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-27 20:51:38,819 [worker.main] INFO: === W.O.R.K.E.R запуск ===
+2026-05-27 20:51:38,819 [worker.main] INFO: Автозапуск зарегистрирован: "C:\Users\Dima\AppData\Local\Programs\Python\Python314\pythonw.exe" "C:\Users\Dima\Desktop\jarvis\main.py"
+2026-05-27 20:51:41,665 [worker.voice] INFO: sounddevice OK
+2026-05-27 20:51:41,749 [worker.voice] INFO: SpeechRecognition OK
+2026-05-27 20:51:41,804 [comtypes.client._code_cache] INFO: Imported existing <module 'comtypes.gen' from 'C:\\Users\\Dima\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-27 20:51:41,804 [comtypes.client._code_cache] INFO: Using writeable comtypes cache directory: 'C:\Users\Dima\AppData\Local\Programs\Python\Python314\Lib\site-packages\comtypes\gen'
+2026-05-27 20:51:41,892 [worker.voice] INFO: pyttsx3 OK
+2026-05-27 20:51:41,892 [worker.voice] INFO: Режим: sounddevice + Google Speech API (без wake-word)
+2026-05-27 20:51:41,892 [worker.voice] INFO: VoiceEngine started (no wake-word mode)
+2026-05-27 20:51:44,177 [worker.voice] INFO: Слушаю без wake-word (rate=16000)
+2026-05-27 20:52:22,565 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «а я сейчас»
+2026-05-27 21:09:21,278 [jarvis.dispatcher] INFO: [RESPONSE] Не знаю как выполнить: «невозможно блядь я не верю нахуй как можно попасть блядь с второго расстояния»
+2026-05-27 21:09:21,322 [worker.voice] ERROR: TTS ошибка: run loop already started
+2026-05-27 22:31:02,517 [worker.voice] ERROR: Ошибка записи: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение

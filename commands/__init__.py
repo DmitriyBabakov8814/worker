@@ -1,0 +1,1 @@
+# Все команды регистрируются в core/command_dispatcher.py → register_all()

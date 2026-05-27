@@ -1,0 +1,21 @@
+# JARVIS — зависимости для Python 3.14
+# Устанавливай одной командой:
+#   pip install -r requirements.txt
+
+# Захват звука с микрофона (замена pyaudio, работает на Python 3.14)
+sounddevice
+scipy
+numpy
+
+# Распознавание речи через Google Speech API
+SpeechRecognition
+
+# Синтез речи (TTS)
+pyttsx3
+
+# Системный мониторинг (CPU / RAM / GPU)
+psutil>=5.9.0
+wmi
+pyadl
+nvidia-ml-py
+GPUtil

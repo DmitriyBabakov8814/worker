@@ -1,10 +1,10 @@
 """
 core/voice_engine.py
 
-Режим: БЕЗ wake-word.
+Режим: БЕЗ wake-word, БЕЗ озвучки.
 Программа всегда слушает микрофон и сразу выполняет команды.
 Распознавание: Google Speech API через sounddevice + scipy.
-TTS: pyttsx3.
+TTS: отключён полностью — Jarvis молчит.
 """
 
 import threading
@@ -16,36 +16,27 @@ import tempfile
 
 logger = logging.getLogger("worker.voice")
 
-SAMPLE_RATE     = 16000
-CHANNELS        = 1
-PHRASE_SEC      = 7      # макс длина фразы
-SILENCE_SEC     = 1.2    # пауза = конец фразы
-ENERGY_THRESHOLD = 500   # RMS порог тишины
+SAMPLE_RATE      = 16000
+CHANNELS         = 1
+PHRASE_SEC       = 7
+SILENCE_SEC      = 1.2
+ENERGY_THRESHOLD = 500
 
 
 class VoiceEngine:
-    """
-    Состояния:
-        listening  – постоянно слушает (нет idle/wake-word)
-        processing – выполняет команду
-    """
-
     def __init__(self, on_state_change=None, on_transcript=None, on_command=None):
         self.on_state_change = on_state_change
         self.on_transcript   = on_transcript
         self.on_command      = on_command
 
-        self._state    = "listening"
-        self._running  = False
-        self._thread   = None
+        self._state     = "listening"
+        self._running   = False
+        self._thread    = None
         self._cmd_queue: queue.Queue = queue.Queue()
 
-        self._sd_ok  = False
-        self._sr_ok  = False
-        self._tts_ok = False
-
+        self._sd_ok      = False
+        self._sr_ok      = False
         self._recognizer = None
-        self._tts_engine = None
 
         self._load_libs()
 
@@ -58,7 +49,7 @@ class VoiceEngine:
         self._set_state("listening")
         self._thread = threading.Thread(target=self._listen_loop, daemon=True)
         self._thread.start()
-        logger.info("VoiceEngine started (no wake-word mode)")
+        logger.info("VoiceEngine started (no wake-word, no TTS)")
 
     def stop(self):
         self._running = False
@@ -68,10 +59,10 @@ class VoiceEngine:
         return self._state
 
     def speak(self, text: str):
-        threading.Thread(target=self._speak_sync, args=(text,), daemon=True).start()
+        """Озвучка отключена — метод оставлен для совместимости, но ничего не делает."""
+        logger.debug(f"[SPEAK disabled] {text}")
 
     def send_text_command(self, text: str):
-        """Инъекция текстовой команды из UI."""
         self._cmd_queue.put(text)
 
     # ── Init ──────────────────────────────────────────────────────────────────
@@ -89,39 +80,13 @@ class VoiceEngine:
         try:
             import speech_recognition as sr
             self._recognizer = sr.Recognizer()
-            self._recognizer.pause_threshold = SILENCE_SEC
-            self._recognizer.energy_threshold = ENERGY_THRESHOLD
+            self._recognizer.pause_threshold        = SILENCE_SEC
+            self._recognizer.energy_threshold       = ENERGY_THRESHOLD
             self._recognizer.dynamic_energy_threshold = True
             self._sr_ok = True
             logger.info("SpeechRecognition OK")
         except ImportError as e:
             logger.warning(f"SpeechRecognition недоступен: {e}")
-
-        try:
-            import pyttsx3
-            engine = pyttsx3.init()
-            engine.setProperty("rate", 160)
-            for v in engine.getProperty("voices"):
-                if "ru" in v.id.lower() or "russian" in v.name.lower():
-                    engine.setProperty("voice", v.id)
-                    break
-            self._tts_engine = engine
-            self._tts_ok = True
-            logger.info("pyttsx3 OK")
-        except Exception as e:
-            logger.warning(f"pyttsx3 недоступен: {e}")
-
-    # ── TTS ───────────────────────────────────────────────────────────────────
-
-    def _speak_sync(self, text: str):
-        if self._tts_ok and self._tts_engine:
-            try:
-                self._tts_engine.say(text)
-                self._tts_engine.runAndWait()
-            except Exception as e:
-                logger.error(f"TTS ошибка: {e}")
-        else:
-            logger.info(f"[SPEAK] {text}")
 
     # ── State ─────────────────────────────────────────────────────────────────
 
@@ -134,11 +99,11 @@ class VoiceEngine:
 
     def _listen_loop(self):
         if self._sd_ok and self._sr_ok:
-            logger.info("Режим: sounddevice + Google Speech API (без wake-word)")
+            logger.info("Режим: sounddevice + Google Speech API")
             self._loop_sounddevice()
         else:
             logger.warning("Аудио недоступно → текстовый режим")
-            self._loop_demo()
+            self._loop_text_only()
 
     # ── sounddevice loop ──────────────────────────────────────────────────────
 
@@ -148,18 +113,15 @@ class VoiceEngine:
         import speech_recognition as sr
         from scipy.io import wavfile
 
-        BLOCK = int(SAMPLE_RATE * 0.5)
+        BLOCK         = int(SAMPLE_RATE * 0.5)
         SILENCE_BLOCKS = int(SILENCE_SEC / 0.5)
-        MAX_BLOCKS = int(PHRASE_SEC / 0.5)
+        MAX_BLOCKS    = int(PHRASE_SEC / 0.5)
 
-        audio_buf    = []
-        silent_blks  = 0
-        recording    = False
-
-        logger.info(f"Слушаю без wake-word (rate={SAMPLE_RATE})")
+        audio_buf  = []
+        silent_blks = 0
+        recording  = False
 
         while self._running:
-            # Проверяем текстовые команды из CMD-поля
             try:
                 cmd = self._cmd_queue.get_nowait()
                 self._execute_command(cmd)
@@ -176,7 +138,7 @@ class VoiceEngine:
                 if rms > ENERGY_THRESHOLD:
                     audio_buf.append(flat)
                     silent_blks = 0
-                    recording = True
+                    recording   = True
                 elif recording:
                     silent_blks += 1
                     audio_buf.append(flat)
@@ -214,9 +176,9 @@ class VoiceEngine:
                 logger.error(f"Ошибка записи: {e}")
                 time.sleep(0.5)
 
-    # ── Demo (текстовый) ──────────────────────────────────────────────────────
+    # ── Текстовый режим ───────────────────────────────────────────────────────
 
-    def _loop_demo(self):
+    def _loop_text_only(self):
         while self._running:
             try:
                 cmd = self._cmd_queue.get(timeout=1)
@@ -230,11 +192,8 @@ class VoiceEngine:
         if not text:
             return
         text = text.lower().strip()
-
         if self.on_transcript:
             self.on_transcript(text, False)
-
-        # Сразу в processing — никакого wake-word
         self._set_state("processing")
         if self.on_command:
             self.on_command(text)

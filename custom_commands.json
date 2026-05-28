@@ -1,0 +1,96 @@
+[
+  {
+    "triggers": [
+      "открой гугл",
+      "гугл",
+      "google"
+    ],
+    "action": "browser",
+    "params": {
+      "url": "https://google.com"
+    },
+    "desc": "Открывает Google в браузере"
+  },
+  {
+    "triggers": [
+      "открой ютуб",
+      "youtube",
+      "ютуб"
+    ],
+    "action": "browser",
+    "params": {
+      "url": "https://youtube.com"
+    },
+    "desc": "Открывает YouTube"
+  },
+  {
+    "triggers": [
+      "открой github",
+      "гитхаб"
+    ],
+    "action": "browser",
+    "params": {
+      "url": "https://github.com"
+    },
+    "desc": "Открывает GitHub"
+  },
+  {
+    "triggers": [
+      "открой телеграм",
+      "телеграм"
+    ],
+    "action": "app",
+    "params": {
+      "cmd": "start",
+      "args": [
+        "",
+        "telegram.exe"
+      ]
+    },
+    "desc": "Запускает Telegram"
+  },
+  {
+    "triggers": [
+      "открой рабочий стол",
+      "рабочий стол"
+    ],
+    "action": "keys",
+    "params": {
+      "keys": "win+d"
+    },
+    "desc": "Показывает рабочий стол"
+  },
+  {
+    "triggers": [
+      "сделай скриншот",
+      "скриншот"
+    ],
+    "action": "keys",
+    "params": {
+      "keys": "win+shift+s"
+    },
+    "desc": "Запускает скриншот (Snip & Sketch)"
+  },
+  {
+    "triggers": [
+      "открой диспетчер задач",
+      "диспетчер"
+    ],
+    "action": "app",
+    "params": {
+      "cmd": "taskmgr"
+    },
+    "desc": "Открывает диспетчер задач"
+  },
+  {
+    "triggers": [
+      "поищи",
+      "найди в интернете"
+    ],
+    "action": "search",
+    "params": {
+      "engine": "https://google.com/search?q="
+    },
+    "desc": "Поиск в Google (поищи [запрос])"
+  }
+]

@@ -2,18 +2,17 @@
 core/ai_engine.py  –  AI-ядро W.O.R.K.E.R
 
 Склеивает OllamaClient + DialogueManager в единый интерфейс.
-Это единственная точка входа для всего AI-функционала.
-
-Добавление новых возможностей (memory, tools, web) — только здесь,
-остальные слои не трогаются.
+Интегрирован с UserMemory: факты о пользователе автоматически
+извлекаются из каждого запроса и добавляются в system-prompt.
 """
 
 import logging
 from typing import Optional
 
-from core.ollama_client  import OllamaClient, OllamaConnectionError, OllamaError
+from core.ollama_client   import OllamaClient, OllamaConnectionError, OllamaError
 from core.dialogue_manager import DialogueManager
-from core.ai_config       import SYSTEM_PROMPT, MAX_HISTORY
+from core.ai_config        import SYSTEM_PROMPT, MAX_HISTORY
+from core.user_memory      import get_memory, RECALL_TRIGGERS, FORGET_TRIGGERS
 
 logger = logging.getLogger("worker.ai_engine")
 
@@ -33,12 +32,13 @@ class AIEngine:
         system_prompt: str = SYSTEM_PROMPT,
         max_history:   int = MAX_HISTORY,
     ):
-        self._client   = OllamaClient()
-        self._dialogue = DialogueManager(
+        self._client        = OllamaClient()
+        self._base_prompt   = system_prompt
+        self._dialogue      = DialogueManager(
             system_prompt=system_prompt,
             max_history=max_history,
         )
-        self._enabled  = True    # можно отключить через disable()
+        self._enabled = True
         logger.info("AIEngine инициализирован")
 
     # ── Public ────────────────────────────────────────────────────────────────
@@ -46,9 +46,7 @@ class AIEngine:
     def ask(self, text: str) -> str:
         """
         Главный метод: принимает текст пользователя, возвращает ответ AI.
-
-        Всегда возвращает строку — никогда не бросает наружу.
-        При ошибках возвращает понятное сообщение для пользователя.
+        Автоматически извлекает и сохраняет факты о пользователе.
         """
         if not self._enabled:
             return "AI-модуль отключён."
@@ -59,6 +57,28 @@ class AIEngine:
         text = text.strip()
         logger.info(f"AI запрос: {text[:80]}")
 
+        mem = get_memory()
+
+        # ── Команды работы с памятью ─────────────────────────────────────────
+        tl = text.lower()
+        if any(tl.startswith(t) or t in tl for t in RECALL_TRIGGERS):
+            return mem.recall_text()
+
+        if any(tl.startswith(t) or t in tl for t in FORGET_TRIGGERS):
+            return mem.forget_all()
+
+        # ── Авто-извлечение фактов ───────────────────────────────────────────
+        changes = mem.extract_and_save(text)
+
+        # ── Обновляем system-prompt с учётом памяти ──────────────────────────
+        snippet = mem.as_prompt_snippet()
+        if snippet:
+            full_prompt = self._base_prompt + "\n\n" + snippet
+        else:
+            full_prompt = self._base_prompt
+        self._dialogue._system_prompt = full_prompt
+
+        # ── Диалог ───────────────────────────────────────────────────────────
         self._dialogue.add_user(text)
         messages = self._dialogue.get_messages()
 
@@ -66,7 +86,6 @@ class AIEngine:
             reply = self._client.chat(messages)
         except OllamaConnectionError as e:
             logger.warning(str(e))
-            # Убираем последнее user-сообщение из истории — запрос не состоялся
             self._dialogue._history.pop()
             return (
                 "Ollama не запущена. "
@@ -83,10 +102,15 @@ class AIEngine:
 
         self._dialogue.add_assistant(reply)
         logger.info(f"AI ответ: {reply[:80]}")
+
+        # Если сохранили новые факты — добавляем короткое уведомление
+        if changes:
+            note = "  [запомнил: " + ", ".join(changes) + "]"
+            return reply + note
+
         return reply
 
     def clear_history(self) -> str:
-        """Очищает историю диалога. Возвращает подтверждение."""
         self._dialogue.clear()
         return "История диалога очищена."
 
@@ -100,7 +124,6 @@ class AIEngine:
 
     @property
     def is_available(self) -> bool:
-        """Проверяет доступность Ollama (быстро, без диалога)."""
         return self._client.is_available()
 
     @property

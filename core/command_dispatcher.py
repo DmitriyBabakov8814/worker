@@ -1,11 +1,12 @@
 """
 core/command_dispatcher.py  –  маршрутизатор команд W.O.R.K.E.R
 
-Цепочка обработки:
-  1. Конкретные команды (музыка, громкость, выключение, …)
-  2. AIQueryCommand  — явные AI-запросы (фразы из AI_PREFIXES)
-  3. AIClearHistoryCommand — управление историей диалога
-  4. AIFallbackCommand — всё остальное уходит в Ollama
+Порядок обработки:
+  1. Управление кастомными командами (добавить/удалить/список)
+  2. Кастомные команды пользователя (из custom_commands.json)
+  3. Встроенные конкретные команды (музыка, громкость, выключение…)
+  4. Память пользователя (recall/forget)
+  5. AI-слой (явные фразы → Ollama, всё остальное → fallback)
 """
 
 import sys
@@ -45,21 +46,38 @@ class CommandDispatcher:
         self._register_all()
 
     def _register_all(self) -> None:
-        from commands.music              import MusicCommand
-        from commands.claude_ai          import ClaudeCommand
-        from commands.volume             import (
+        from commands.music         import MusicCommand
+        from commands.claude_ai     import ClaudeCommand
+        from commands.volume        import (
             VolumeUpCommand, VolumeDownCommand,
             VolumeMaxCommand, VolumeMuteCommand,
         )
-        from commands.shutdown_pc        import ShutdownPcCommand
-        from commands.ai_query           import (
+        from commands.shutdown_pc   import ShutdownPcCommand
+        from commands.open_site     import OpenSiteCommand
+        from commands.custom_commands import (
+            AddCustomCommandCommand,
+            DeleteCustomCommandCommand,
+            ListCustomCommandsCommand,
+            CustomCommandRunner,
+        )
+        from commands.ai_query      import (
+            MemoryRecallCommand,
+            MemoryForgetCommand,
             AIClearHistoryCommand,
             AIQueryCommand,
-            AIFallbackCommand,   # ← заменяет UnknownCommand
+            AIFallbackCommand,
         )
 
         for cls in [
-            # ── Конкретные команды ───────────────────────────────────────────
+            # ── Управление кастомными командами ─────────────────────────────
+            AddCustomCommandCommand,
+            DeleteCustomCommandCommand,
+            ListCustomCommandsCommand,
+            # ── Открытие сайтов по названию ─────────────────────────────────
+            OpenSiteCommand,
+            # ── Кастомные команды пользователя ──────────────────────────────
+            CustomCommandRunner,
+            # ── Встроенные команды ───────────────────────────────────────────
             MusicCommand,
             ClaudeCommand,
             VolumeUpCommand,
@@ -67,10 +85,13 @@ class CommandDispatcher:
             VolumeMaxCommand,
             VolumeMuteCommand,
             ShutdownPcCommand,
+            # ── Память пользователя ──────────────────────────────────────────
+            MemoryRecallCommand,
+            MemoryForgetCommand,
             # ── AI-слой ──────────────────────────────────────────────────────
-            AIClearHistoryCommand,   # сначала — чтобы не улетело в AI как запрос
-            AIQueryCommand,          # явные AI-фразы
-            AIFallbackCommand,       # ← всегда последний, matches() == True
+            AIClearHistoryCommand,
+            AIQueryCommand,
+            AIFallbackCommand,
         ]:
             self._commands.append(cls(on_response=self.on_response))
 

@@ -23,6 +23,13 @@ PHRASE_SEC       = 7
 SILENCE_SEC      = 1.2
 ENERGY_THRESHOLD = 500
 MIC_TOGGLE_WORD  = "микрофон"
+MIC_TOGGLE_PHRASES = (
+    "микрофон",
+    "выключи микрофон",
+    "включи микрофон",
+    "заглуши микрофон",
+    "отключи микрофон",
+)
 
 
 class VoiceEngine:
@@ -116,6 +123,11 @@ class VoiceEngine:
             try: self.on_mute_change(is_muted)
             except Exception as e: logger.error(f"on_mute_change: {e}")
 
+    @staticmethod
+    def _is_mic_toggle(text: str) -> bool:
+        t = text.strip().lower()
+        return t in MIC_TOGGLE_PHRASES or t == MIC_TOGGLE_WORD
+
     # ── Loops ─────────────────────────────────────────────────────────────────
 
     def _listen_loop(self):
@@ -140,12 +152,6 @@ class VoiceEngine:
         recording   = False
 
         while self._running:
-            # Мут — просто ждём
-            if self._muted:
-                time.sleep(0.1)
-                audio_buf = []; silent_blks = 0; recording = False
-                continue
-
             try:
                 block = sd.rec(BLOCK, samplerate=SAMPLE_RATE,
                                channels=CHANNELS, dtype="int16")
@@ -200,17 +206,17 @@ class VoiceEngine:
         """
         if not text: return
 
-        # Триггер мута — работает всегда
-        if text.strip() == MIC_TOGGLE_WORD:
+        # Триггер мута — работает всегда (в т.ч. когда микрофон заглушён)
+        if self._is_mic_toggle(text):
             new_state = self.toggle_mute()
             status = "выключен" if new_state else "включён"
             if self.on_transcript:
-                # partial=True → UI покажет как system-строку, не как пузырёк
                 try: self.on_transcript(f"Микрофон {status}", True)
                 except Exception: pass
             return
 
-        if self._muted: return
+        if self._muted:
+            return
 
         # 1. Показываем что сказал пользователь (ОДИН РАЗ)
         if self.on_transcript:
